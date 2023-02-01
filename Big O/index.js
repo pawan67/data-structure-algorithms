@@ -1,11 +1,6 @@
 const nemo = ["nemo"];
 
 function findNemo(array) {
-  // for (let i = 0; i< array.length; i++){
-  //     if(array[i] == 'nemo'){
-  //         console.log("Found NEMO")
-  //     }
-  // }
   let t0 = performance.now();
   array.forEach((element, i) => {
     if (element == "nemo") {
@@ -17,4 +12,4 @@ function findNemo(array) {
   console.log("Call to find nemo took " + (t1 - t0) + " ms");
 }
 
-findNemo(nemo);
+findNemo(nemo); //0(n) --> Linear Time
